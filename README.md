@@ -1,7 +1,7 @@
 # Kamehameha Hand-Tracking Effect
 
 <p align="center">
-  <img src="https://media.giphy.com/media/dmFXUZ5up1T896HP8B/giphy.gif" width="600"/>
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDFjN2hiemxvZWJwZ2loZGVzeGQxYW12azBpZWQzanZrdWw2aGdqNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dmFXUZ5up1T896HP8B/giphy.gif" width="700"/>
 </p>
 
 <p align="center">
