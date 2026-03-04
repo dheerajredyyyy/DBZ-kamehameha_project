@@ -1,49 +1,91 @@
 # Kamehameha Hand-Tracking Effect
 
-An interactive webcam-based Kamehameha-style energy blast effect built with **Python**, **MediaPipe**, **OpenCV**, **NumPy**, and **Pygame**.  
-Raise both hands in front of the camera, charge the energy ball, and unleash a cinematic blast with particles, bloom, screen shake, audio, and a custom end screen.
+<p align="center">
+  <img src="https://media.giphy.com/media/dmFXUZ5up1T896HP8B/giphy.gif" width="600"/>
+</p>
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green?logo=opencv)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-Hand%20Tracking-orange)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-blue?logo=numpy)
+![Pygame](https://img.shields.io/badge/Pygame-Audio%20Engine-yellow)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
+</p>
 
 ---
 
-## Technologies Used
+An **interactive Dragon Ball–inspired Kamehameha simulation** built using **Python**, **MediaPipe**, **OpenCV**, **NumPy**, and **Pygame**.  
+This project uses real-time **webcam-based hand tracking** to allow users to charge and release a cinematic energy blast with particle effects, bloom lighting, screen shake, sound effects, and a custom end screen UI.
+
+---
+
+# Features
+
+- Real-time **hand tracking** using MediaPipe
+- **Interactive energy charging and release**
+- **Particle effects and bloom lighting**
+- **Screen shake and heat distortion effects**
+- **Sound effects for charging and blast release**
+- **Stylized end screen UI**
+- Fully **webcam-based interaction**
+
+---
+
+# Technologies Used
 
 - **Python 3**
-- **MediaPipe** (hand tracking)
-- **OpenCV (cv2)** (video capture, image processing, rendering)
-- **NumPy** (numeric operations, image buffers)
-- **Pygame** (audio playback, sound effects)
+- **MediaPipe** – hand tracking
+- **OpenCV (cv2)** – video capture, image processing, rendering
+- **NumPy** – numerical operations and image buffers
+- **Pygame** – audio playback and sound effects
 
 ---
 
-## Installation
+# Installation
 
-1. **Clone the repository**
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/<your-username>/<your-repo-name>.git
 cd <your-repo-name>
 ```
 
-2. **(Optional) Create and activate a virtual environment**
+## 2. (Optional) Create and Activate a Virtual Environment
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. **Install dependencies**
+Activate the environment:
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+source venv/bin/activate
+```
+
+## 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Make sure you have a working webcam connected to your system.
+Ensure that a **working webcam** is connected to your system.
 
 ---
 
-## How to Run
+# How to Run
 
-From the project root, run:
+From the project root directory:
 
 ```bash
 python main.py
@@ -51,24 +93,24 @@ python main.py
 
 This will:
 
-- Open your default webcam using OpenCV.
-- Track both hands via MediaPipe.
-- Allow you to charge and fire a Kamehameha-style blast.
-- Display a stylized end screen with a background image and UI.
+- Open the **default webcam** using OpenCV
+- Detect **both hands using MediaPipe**
+- Allow you to **charge and release a Kamehameha-style blast**
+- Display a **stylized end screen with UI elements**
 
 Press **`q`** to quit the application at any time.
 
 ---
 
-## Folder Structure
+# Folder Structure
 
 ```text
 .
-├── main.py               # Main entry point for the experience
+├── main.py               # Main application entry point
 ├── requirements.txt      # Python dependencies
 ├── README.md             # Project documentation
-├── .gitignore            # Git ignore rules (created for GitHub use)
-└── media/                # Game assets (audio + images)
+├── .gitignore            # Git ignore rules
+└── media/                # Assets (audio + images)
     ├── Basechargeloop1.wav
     ├── Escalation2.wav
     ├── Release3.wav
@@ -76,35 +118,64 @@ Press **`q`** to quit the application at any time.
     └── logo.png
 ```
 
-> Note: A `venv/` directory is recommended for local development but should not be committed; it is covered by `.gitignore`.
+> Note: A `venv/` directory is recommended for local development but should not be committed; it is already covered by `.gitignore`.
 
 ---
 
-## Assets and Paths
+# Assets and Paths
 
-All assets are referenced using **relative paths** so the project works when cloned anywhere:
+All assets are referenced using **relative paths**, allowing the project to run correctly regardless of installation location.
 
-- Sounds: `media/Basechargeloop1.wav`, `media/Escalation2.wav`, `media/Release3.wav`
-- Images: `media/background.jpg`, `media/logo.png`
+### Audio
 
-As long as the `media/` folder sits next to `main.py`, the project can be run from any directory location.
+```
+media/Basechargeloop1.wav
+media/Escalation2.wav
+media/Release3.wav
+```
+
+### Images
+
+```
+media/background.jpg
+media/logo.png
+```
+
+Ensure the **`media/` folder sits next to `main.py`**.
 
 ---
 
-## Project Information
+# Project Information
 
-- **Owner**: Dheeraj Reddy  
-- **Author**: Dheeraj Reddy  
-- **Developer Watermark**: `@Developed by Dheeraj Reddy` (also shown on the end screen UI)
+**Owner:** Dheeraj Reddy  
+**Author:** Dheeraj Reddy  
 
-**Description**  
-This project was developed by **Dheeraj Reddy** using **Python** and **MediaPipe** to create an interactive Kamehameha-style visual effect with real-time hand tracking, particle effects, bloom, heat distortion, audio, and a polished end screen UI.
+### Developer Watermark
+
+```
+Developed by Dheeraj Reddy
+```
+
+This watermark is also displayed on the **end screen UI**.
+
+### Description
+
+This project demonstrates how **computer vision and real-time interaction** can be used to create engaging visual effects inspired by anime. Using **MediaPipe hand tracking**, the system detects user gestures through a webcam and generates a **Dragon Ball–style Kamehameha energy blast** enhanced with particle systems, bloom effects, sound design, and a stylized interface.
 
 ---
 
-## Notes for Contributors
+# Notes for Contributors
 
-- Keep all new assets inside the `media/` directory and reference them with **relative paths** (for example, `media/new_sound.wav`).
-- Avoid committing local environment or IDE files (`venv/`, `.env`, `__pycache__/`, etc.) which are already covered in `.gitignore`.
+- Place all new assets inside the **`media/` directory**
+- Reference files using **relative paths**
+- Avoid committing local environment or IDE files such as:
 
-# kamehameha
+```
+venv/
+__pycache__/
+.env
+.vscode/
+.idea/
+```
+
+These are already excluded via `.gitignore`.
